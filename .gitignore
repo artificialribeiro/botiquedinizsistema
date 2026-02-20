@@ -1,0 +1,50 @@
+# Dependências
+node_modules/
+
+# Ambiente
+.env
+.env.local
+.env.*.local
+
+# Banco de dados
+data/*.db
+data/*.db-journal
+data/*.db-shm
+data/*.db-wal
+
+# Uploads (manter estrutura, ignorar arquivos)
+data/uploads/**/*
+!data/uploads/.gitkeep
+!data/uploads/produtos/.gitkeep
+!data/uploads/banners/.gitkeep
+!data/uploads/reclamacoes/.gitkeep
+
+# Backups
+data/backups/*
+!data/backups/.gitkeep
+
+# Logs
+logs/*
+!logs/.gitkeep
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporários
+tmp/
+temp/
+*.tmp
+
+# Testes
+coverage/
+.nyc_output/
+
+# PM2
+.pm2/
